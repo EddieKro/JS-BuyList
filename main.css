@@ -1,8 +1,32 @@
 h1 {
-    color: red;
+    color: blue;
+    text-align: center;
 }
 
-.text2018 {
-    color: #ff59c0;
-    font-size: 40px;
+body {
+    background-color: #DADADA;
 }
+
+.container {
+    margin: 100px;
+}
+
+.right {
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    display: block;
+    max-width:500px;
+}
+
+.left {
+    text-align: center;
+    float: left;
+    background-color: white;
+    padding: 15px;
+    display: block;
+    max-width: 600px;
+
+    vertical-align: top;
+}
+
