@@ -1,32 +1,239 @@
-h1 {
-    color: blue;
-    text-align: center;
-}
-
 body {
     background-color: #DADADA;
+    line-height: 1.5em;
+    height: 100%;
+    font-size: 14px;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
-.container {
-    margin: 100px;
+input {
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 1em !important;
+    margin: 0.45em !important;
+}
+
+.outer-container {
+    padding-top: 100px;
+    display: block;
+    align-items: stretch;
+    max-width: 100% !important;
+}
+
+@media only screen and (min-width: 1300px) {
+    /* 0.93*1300 = 1209px */
+    .outer-container {
+        width: 1209px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+.main-container {
+
+    margin: -1rem -1rem;
+
 }
 
 .right {
-    text-align: center;
+    /*  text-align: center;*/
     background-color: white;
-    padding: 15px;
-    display: block;
-    max-width:500px;
+
+    display: inline-block;
+    margin: 14px;
+    min-width: 350px;
 }
 
 .left {
-    text-align: center;
+    width: 55% !important;
+    margin: 14px;
+    min-width: 350px;
     float: left;
     background-color: white;
     padding: 15px;
-    display: block;
-    max-width: 600px;
-
+    display: inline-block;
     vertical-align: top;
 }
 
+.line {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.outer-block-h {
+}
+
+.outer-block-h, .outer-block {
+    border-bottom: 1px solid grey;
+}
+
+.outer-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.outer-block:last-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: none;
+}
+
+.button1 {
+    background-color: #2185D0;
+    color: white;
+    align-content: center;
+    float: right;
+    padding: 0.4em 0.4em;
+}
+
+.item-not-bought {
+    display: inline-flex;
+}
+
+.item-bought {
+
+    display: inline-flex;
+}
+
+.item-name, .item-name-n {
+    padding: 10px;
+    text-align: left;
+    display: inline;
+}
+
+.item-name-n {
+    text-decoration: line-through;
+    line-height: 0.54em;
+
+}
+
+.buttonm, .buttonx {
+    background-color: #DB2828;
+    color: white;
+    padding: 0.3em 0.3em;
+    min-height: 1em;
+    line-height: 1em;
+
+}
+
+.buttonp {
+    background-color: #21BA45;
+    padding: 1px;
+    color: white;
+}
+
+.buttonp, .buttonm {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0.3em 0.3em;
+    min-height: 1em;
+    line-height: 1em;
+    min-width: 1em;
+}
+
+.buttonx {
+    width: 30px;
+    height: 30px;
+    min-height: 1em;
+    line-height: 1em;
+    min-width: 1em;
+}
+
+.buttonm, .buttonp, .buttonx {
+    border: none;
+}
+
+.qty-block-b, .quantity {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 0.2em 0.4em;
+}
+
+.quantity {
+    background-color: #E8E8E8;
+    width: fit-content;
+
+}
+
+.button-wrapper {
+    padding-top: .5em !important;
+    padding-left: 1rem;
+    padding-right: 0.3rem;
+    padding-bottom: .4em !important;
+}
+
+.buttonx, .button-not-bought {
+    float: right;
+}
+
+.button-bought, .button-not-bought {
+    border-radius: .4em;
+    padding: 0.3em 0.3em;
+    border: none;
+
+    line-height: 2em;
+}
+
+.button-bought {
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    float: right;
+    margin-right: 5px;
+}
+
+.buttonp, .buttonm, .buttonx, .button-not-bought, .button-bought, .button1 {
+    cursor: pointer;
+
+}
+
+.button-m {
+    cursor: default;
+}
+
+.label {
+    padding: .58em .63em;
+    background-color: #E8E8E8;
+}
+
+.segment {
+    border-top: 1px solid #222426;
+    padding: 0.45em 0.45em 0.45em;
+    line-height: 2em;
+}
+
+.segment:first-child {
+    border-top: none;
+}
+
+.title {
+    text-align: center;
+}
+
+.value, .valueb {
+
+    padding: .5em !important;
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+
+.titleb, .valueb {
+    text-decoration: line-through;
+}
