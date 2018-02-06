@@ -107,7 +107,7 @@ h3 {
     padding: 0.4em 0.4em;
 }
 
-.button1:hover{
+.button1:hover {
     background-color: #4060ff;
 }
 
@@ -147,7 +147,7 @@ h3 {
     color: white;
 }
 
-.buttonp:hover{
+.buttonp:hover {
     background-color: #227331;
 }
 
@@ -170,7 +170,7 @@ h3 {
 
 }
 
-.buttonx:hover{
+.buttonx:hover {
     background-color: #950a03;
 }
 
@@ -213,7 +213,7 @@ h3 {
     padding: 1em 2em 1.15em;
 }
 
-.button-not-bought:hover, .button-bought:hover{
+.button-not-bought:hover, .button-bought:hover {
     background-color: #c3cbbb;
 }
 
@@ -278,4 +278,22 @@ h3 {
 
 .titleb, .valueb {
     text-decoration: line-through;
+}
+
+.badge {
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    border-radius:.4em;
+
+    background-color: #ad53b4;
+
+}
+
+.badge-text {
+    color: white;
+    font-size: 24px;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;;
 }
