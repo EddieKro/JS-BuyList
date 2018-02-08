@@ -280,21 +280,41 @@ h3 {
     text-decoration: line-through;
 }
 
-.button-wrapper .tooltiptext{
-    visibility: hidden;
-    width: 100px;
-    background-color: #6d27b4;
-    text-align: center;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
 }
 
-.button-wrapper.tooltiptext:hover{
+[data-tooltip]:before {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: 110%;
+    left: 65%;
+    padding: .5em;
+    margin-left: -60px;
+    content: attr(data-tooltip);
+    width: 80px;
+    background-color: #6d27b4;
+    text-align: center;
+    border-radius: .4em;
+    font-size: 1rem;
+    color: white;
+    transition: opasity 1.3s, visibility 0s linear 1.3s ;
+    /*transform: scale3d(.2,.2,1);
+   /* transition: all .6s ease-in-out;*/
+
+}
+
+[data-tooltip]:hover:before {
     visibility: visible;
+    /*transform: scale3d(1,1,1);*/
+    transition: 2s linear;
+    transition-delay: .5s;
+    bottom:50px;
+    opacity: 1;
 }
 
 .badge {
@@ -335,6 +355,9 @@ h3 {
 
 .badge:hover {
     background-color: #2c2cb4;
+    transition: .5s linear;
+    transition-delay: .32s;
+    bottom:10px;
 }
 
 .badge:hover #hidden {
@@ -344,13 +367,15 @@ h3 {
 @media print {
     .badge {
         background-color: white;
-        border:1px solid #ad53b4;
+        border: 1px solid #ad53b4;
     }
+
     .badge-text {
         display: none;
         visibility: hidden;
     }
-    #hidden{
+
+    #hidden {
         display: block;
     }
 
