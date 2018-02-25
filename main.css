@@ -40,9 +40,7 @@ h3 {
 }
 
 .main-container {
-
     margin: -1rem -1rem;
-
 }
 
 .right {
@@ -128,8 +126,6 @@ h3 {
 
 .item-name-n {
     text-decoration: line-through;
-    line-height: 0.54em;
-
 }
 
 .buttonm, .buttonx {
@@ -138,7 +134,6 @@ h3 {
     padding: 0.3em 0.3em;
     min-height: 1em;
     line-height: 1em;
-
 }
 
 .buttonp {
@@ -241,6 +236,11 @@ h3 {
     padding: .58em .63em;
     background-color: #E8E8E8;
     border-radius: 5px;
+    margin-left: 0.4rem;
+}
+
+.label:first-child {
+    margin: 0;
 }
 
 .segment {
@@ -315,7 +315,7 @@ h3 {
 
 .badge {
     margin: 0 14px 0 14px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     padding: 1em;
@@ -323,7 +323,6 @@ h3 {
     border-top-right-radius: .4em;
     background-color: #ad53b4;
     transition: all 2s ease;
-
 }
 
 .badge-text, .hidden-text, .p-text {
@@ -376,11 +375,10 @@ h3 {
 
 }
 
-@media (max-height: 500px) {
+@media (min-width: 500px) and (max-height: 500px) {
     .badge { /*crunch!!*/
         position: relative;
         float: left;
-
     }
 
     .badge-text {
